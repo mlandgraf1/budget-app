@@ -3,7 +3,18 @@
 //Budget Controller
 var budgetController = (function() {
 
+    //expense and income function constructors
+    var Expense = function(id, description, value) {
+        this.id = id;
+        this.description = description;
+        this.value = value;
+    };
 
+    var Income = function(id, description, value) {
+        this.id = id;
+        this.description = description;
+        this.value = value;
+    };
 
 })();
 
@@ -56,7 +67,6 @@ var controller = (function(budgetCtrl, UICtrl) {
 
         //1. Get the field input data
         var input = UICtrl.getInput();
-        console.log(input);
 
         //2. Add the item to the budget controller
 
