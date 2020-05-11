@@ -14,7 +14,7 @@ var UIController = (function() {
         getInput: function() {
             return {
                 type: document.querySelector('.add__type').value, //will be inc or exp
-                description: document.querySelector('.add_description').value,
+                description: document.querySelector('.add__description').value,
                 value: document.querySelector('.add__value').value
             };
 
@@ -34,7 +34,6 @@ var controller = (function(budgetCtrl, UICtrl) {
         //1. Get the field input data
         var input = UICtrl.getInput();
         console.log(input);
-
 
         //2. Add the item to the budget controller
 
